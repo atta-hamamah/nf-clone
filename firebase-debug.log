@@ -1,0 +1,39 @@
+[debug] [2023-01-14T13:12:06.306Z] ----------------------------------------------------------------------
+[debug] [2023-01-14T13:12:06.311Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-14T13:12:06.312Z] CLI Version:   11.20.0
+[debug] [2023-01-14T13:12:06.312Z] Platform:      win32
+[debug] [2023-01-14T13:12:06.312Z] Node Version:  v16.18.0
+[debug] [2023-01-14T13:12:06.314Z] Time:          Sat Jan 14 2023 15:12:06 GMT+0200 (توقيت شرق أوروبا الرسمي)
+[debug] [2023-01-14T13:12:06.314Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-14T13:12:06.326Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-14T13:12:06.326Z] > authorizing via signed-in user (7atta3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\prog\Netflix-Clone-master
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-14T13:12:25.028Z] Using project from CLI flag: netflix-clone-9f83e
+[debug] [2023-01-14T13:12:25.033Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-9f83e [none]
+[debug] [2023-01-14T13:12:25.575Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-9f83e 403
+[debug] [2023-01-14T13:12:25.575Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-9f83e {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-01-14T13:12:25.576Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-01-14T13:12:25.886Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project netflix-clone-9f83e. Please make sure the project exists and your account has permission to access it.
