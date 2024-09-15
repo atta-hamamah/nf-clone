@@ -4,19 +4,11 @@ import Navbar from './Components/Navbar';
 import Row from './Components/Row';
 import requests from './requests';
 
-
-
 function App() {
   return (
     <div className="app">
-
       <Navbar />
-      
       <Banner />
-       
-      <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} 
-      isLargeRow />
-
       <Row title="Trending now" fetchUrl={requests.fetchTrending} />
 
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
@@ -29,7 +21,6 @@ function App() {
 
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
 
-     
     </div>
   );
 }
